@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Focus Mate Extension",
+  "description": "Focus Mate browser extension for tab monitoring, lock mode enforcement, and attention tracking.",
+  "version": "1.0.0",
+  "permissions": ["storage", "tabs", "activeTab", "webNavigation"],
+  "host_permissions": ["http://localhost:8000/*", "https://localhost:8000/*", "<all_urls>"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Focus Mate Extension",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
+
+
