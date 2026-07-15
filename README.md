@@ -189,6 +189,13 @@ CI (`.github/workflows/ci.yml`) runs backend + frontend suites; ML scripts can r
 - Data retention: persist aggregated stats (labels, gaze angles, tab counts) and avoid storing raw videos unless explicit consent is obtained. Add consent messaging when collecting calibration / in-house data.
 - Dataset licenses: see official dataset pages (linked above) for terms; follow attribution requirements and do not redistribute raw data inside this repo.
 
+## Documentation
+
+Additional documentation is available in the `docs/` folder:
+
+- docs/guides/
+- docs/reports/
+
 ## Demo Script
 Follow `docs/demo-script.md` for a teacher + two-student scenario. After running docker-compose, open teacher + student tabs, configure the extension, run calibration, and watch the label timeline update in real time. A second mini-demo (in README above) explains how to run a toy training/export cycle.
 
@@ -198,9 +205,9 @@ Follow `docs/demo-script.md` for a teacher + two-student scenario. After running
 - Ship the TF.js model through a CDN and version it carefully; include a fallback heuristic in case the download fails.
 - Tighten CSP policies, rotate JWT secrets regularly, and consider WebRTC TURN relays if scaling camera ingestion.
 
-## Roadmap / TODOs
-- Replace heuristic fallback with fully trained quantized model (<8 MB) and add ONNX runtime option.
-- Incorporate MediaPipe FaceMesh landmarks directly into the TF.js inference graph (less pixel bandwidth).
-- Multi-tenant scaling: move WebSocket broadcasts to Redis Streams, add sharding to `tab_switch_events`.
-- Automated active-learning loop that pushes low-confidence frames into the labeling UI with review assignments.
+## Future Enhancements
 
+- Improve AI gaze tracking accuracy using a custom-trained model.
+- Add support for multiple simultaneous classrooms.
+- Integrate advanced analytics and attendance insights.
+- Optimize real-time inference for better performance.
