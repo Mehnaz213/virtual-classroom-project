@@ -198,9 +198,9 @@ Follow `docs/demo-script.md` for a teacher + two-student scenario. After running
 - Ship the TF.js model through a CDN and version it carefully; include a fallback heuristic in case the download fails.
 - Tighten CSP policies, rotate JWT secrets regularly, and consider WebRTC TURN relays if scaling camera ingestion.
 
-## Roadmap / TODOs
-- Replace heuristic fallback with fully trained quantized model (<8 MB) and add ONNX runtime option.
-- Incorporate MediaPipe FaceMesh landmarks directly into the TF.js inference graph (less pixel bandwidth).
-- Multi-tenant scaling: move WebSocket broadcasts to Redis Streams, add sharding to `tab_switch_events`.
-- Automated active-learning loop that pushes low-confidence frames into the labeling UI with review assignments.
+## Future Enhancements
 
+- Improve AI gaze tracking accuracy using a custom-trained model.
+- Add support for multiple simultaneous classrooms.
+- Integrate advanced analytics and attendance insights.
+- Optimize real-time inference for better performance.
