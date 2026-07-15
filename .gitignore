@@ -15,4 +15,7 @@ reports/
 tmp_frames/
 frontend/node_modules/
 backend/.venv/
-
+backend/logs/
+backend/classroom.db
+classroom.db
+.venv/
