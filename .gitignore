@@ -1,23 +1,55 @@
+# Python
 __pycache__/
-.pytest_cache/
-.mypy_cache/
-*.pyc
-.env
-env/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
 venv/
-.DS_Store
+env/
+backend/.venv/
+
+# Environment variables
+.env
+.env.*
+
+# Databases
+*.db
+*.sqlite3
+
+# Logs
+logs/
+backend/logs/
+*.log
+
+# Test cache
+.pytest_cache/
+.coverage
+htmlcov/
+.cache/
+.mypy_cache/
+
+# VS Code
+.vscode/
+
+# Node
 node_modules/
+frontend/node_modules/
+
+# Build
 dist/
 build/
 .parcel-cache/
-coverage/
-reports/
-tmp_frames/
-frontend/node_modules/
-backend/.venv/
-backend/logs/
-backend/classroom.db
-classroom.db
-.venv/
-# Database files
-*.db
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+
+# ML artifacts (generated)
+artifacts/
