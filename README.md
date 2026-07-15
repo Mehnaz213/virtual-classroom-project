@@ -15,6 +15,66 @@ Real-time attention monitoring with webcam-based gaze/head-pose AI, lock-mode en
 - **Reporting & data layer**: PostgreSQL-ready models, SQLite dev defaults, SQL migration scripts, CSV/PDF export, and Postman collection.
 - **DevOps ready**: Dockerfiles, docker-compose stack, pytest + vitest suites, ml scripts, and GitHub Actions workflow for lint/test/build.
 
+# Screenshots
+
+## Login
+
+![Login](docs/images/login.png)
+
+---
+
+## Register
+
+![Register](docs/images/register.png)
+
+---
+
+## Teacher Dashboard
+
+![Teacher Dashboard](docs/images/teacher-dashboard.png)
+
+---
+
+## Student Dashboard
+
+![Student Dashboard](docs/images/student-dashboard.png)
+
+---
+
+## Active Sessions
+
+![Active Sessions](docs/images/active-sessions.png)
+
+---
+
+## AI Attention Detection
+
+### Focused
+
+![Focused](docs/images/focused.png)
+
+### Looking Left
+
+![Looking Left](docs/images/looking-left.png)
+
+### Looking Right
+
+![Looking Right](docs/images/looking-right.png)
+
+### Looking Up
+
+![Looking Up](docs/images/looking-up.png)
+
+### No Face
+
+![No Face](docs/images/no-face.png)
+
+---
+
+## Live Alerts
+
+![Live Alerts](docs/images/live-alerts.png)
+
 ## Repo Structure
 ```
 backend/        FastAPI app, models, services, tests
