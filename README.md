@@ -4,13 +4,15 @@
 
 Real-time attention monitoring with webcam-based gaze/head-pose AI, lock-mode enforcement, tab-switch alerts (Chrome extension), granular attention labels, and downloadable engagement reports.
 
-</div>
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
 ![React](https://img.shields.io/badge/React-Frontend-61DAFB)
 ![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-red)
 ![MediaPipe](https://img.shields.io/badge/MediaPipe-Gaze%20Tracking-orange)
-![MIT License](https://img.shields.io/badge/License-MIT-purple)
+![License](https://img.shields.io/badge/License-MIT-purple)
+
+
+</div>
 
 ## Features
 - **FastAPI backend** with JWT auth, REST + WebSocket channels, and extended event schemas for granular attention labels, gaze vectors, and head-pose metadata.
