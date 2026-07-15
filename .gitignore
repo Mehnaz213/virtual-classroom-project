@@ -19,3 +19,5 @@ backend/logs/
 backend/classroom.db
 classroom.db
 .venv/
+# Database files
+*.db
