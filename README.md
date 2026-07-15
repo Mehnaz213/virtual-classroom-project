@@ -189,6 +189,13 @@ CI (`.github/workflows/ci.yml`) runs backend + frontend suites; ML scripts can r
 - Data retention: persist aggregated stats (labels, gaze angles, tab counts) and avoid storing raw videos unless explicit consent is obtained. Add consent messaging when collecting calibration / in-house data.
 - Dataset licenses: see official dataset pages (linked above) for terms; follow attribution requirements and do not redistribute raw data inside this repo.
 
+## Documentation
+
+Additional documentation is available in the `docs/` folder:
+
+- docs/guides/
+- docs/reports/
+
 ## Demo Script
 Follow `docs/demo-script.md` for a teacher + two-student scenario. After running docker-compose, open teacher + student tabs, configure the extension, run calibration, and watch the label timeline update in real time. A second mini-demo (in README above) explains how to run a toy training/export cycle.
 
